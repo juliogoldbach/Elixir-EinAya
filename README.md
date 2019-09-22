@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # EinAya
 
 **TODO: Add description**
@@ -19,3 +20,7 @@ Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_do
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/ein_aya](https://hexdocs.pm/ein_aya).
 
+=======
+# Elixir-EinAya
+Little elixir project to get parts from "Ein Aya" book.
+>>>>>>> 8832bc90e06a863f72a37c82373cc818effaf4e9
