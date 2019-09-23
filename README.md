@@ -8,7 +8,6 @@
 - Hebrew letters are beign printed upside down by iex.
 - Get user next *piska*
 - Save user current *massechet* and *perek*
-- Maybe add frontend (would probably fix iex hebrew problems)
 - Option to email it.
 - Get *piskaot* related to *parashiot*
 - Fix ugly code
