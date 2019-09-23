@@ -7,16 +7,24 @@ defmodule EinAya do
     Welcome to #{IO.ANSI.green <> "Elixir EinAya" <> IO.ANSI.reset}.
     """
     
-    get_user_massechet_input()
-    |> get_massechet_url(body)
-    |> get_request()
-    |> get_perakim_or_piskaot()
-    |> get_user_perek_piska_input(:perakim)
-    |> get_request()
-    |> get_perakim_or_piskaot()
-    |> get_user_perek_piska_input(:piskaot)
-    |> get_request()
-    |> get_piska()
+    map = 
+      get_user_massechet_input()
+      |> get_massechet_url(body)
+      |> get_request()
+      |> get_perakim_or_piskaot()
+      |> get_user_perek_piska_input(:perakim)
+      |> get_request()
+      |> get_perakim_or_piskaot()
+      |> get_user_perek_piska_input(:piskaot)
+      |> get_request()
+      |> get_piska()
+
+      map.piska
+      #|> String.split(" ,")
+      |> String.graphemes
+      |> Enum.chunk_every(100)
+      |> Enum.map(fn x -> Enum.join(x) end) 
+      |> Enum.reverse
 
   end
 
