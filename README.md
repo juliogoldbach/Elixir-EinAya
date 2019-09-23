@@ -11,3 +11,4 @@
 - Option to email it.
 - Get *piskaot* related to *parashiot*
 - Fix ugly code
+- Fix parsing for cases when there are references inside the *piska*
