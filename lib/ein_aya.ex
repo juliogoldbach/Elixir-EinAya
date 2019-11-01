@@ -129,29 +129,12 @@ defmodule EinAya do
 
   defp get_piska(body) do
 
-    text =
-      body
-      |> get_whole_text()
-
-    header = 
-      body
-      |> get_piska_header()
-
-    # topic =
-    #   text
-    #   |> get_piska_topic()
-
-    guemara =
-      body
-      |> get_piska_guemara()
-
-    guemara_piece =
-      text
-      |> get_guemara_piece()
-
-    piska =
-      text
-      |> get_piska_text()
+    text = get_whole_text(body)
+    header = get_piska_header(body)
+    guemara = get_piska_guemara(body)
+    guemara_piece = get_guemara_piece(text)
+    piska = get_piska_text(text)
+    # topic = get_piska_topic(text)
     
     Map.merge(header, guemara)
     # |> Map.merge(topic)  # most piskaot have no topic
